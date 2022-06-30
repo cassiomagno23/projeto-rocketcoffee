@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* ========= RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+/* =============== BACKGROUND DO SITE =============== */
+body{
+  background: var(--backgrond);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+
+#circulo1{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  background-color:#8257E5;
+  border-radius: 300px;
+  filter: blur(200px);
+}
+
+#circulo2{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:#8257E5;
+  border-radius: 300px;
+  filter: blur(200px);
+}
+
+/* ========= NAVBAR ========= */
+
+.logo-mobile{
+  display:none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4.5rem;  
+  margin-left: 33rem;
+}
+
+img{
+  width: 60px;
+  margin-left: 100px;  
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-left: 8.75rem;
+  margin-right: 23.125rem;
+  
+}
+
+.navbar-item{
+  white-space:nowrap;
+  margin: 0 1.0rem;
+  font-family: Manrope;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-item:hover{  
+  color: var(--button);
+  transition-duration: 0.3s; 
+}
+
+#navbar-button{
+  padding: 0.8rem 3rem;
+  border: 1px solid var(--button);
+  border-radius: 7px;
+  margin: 0 2.5rem;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color)
+}
+
+#navbar-button.navbar-item{
+  margin: 0 100px;
+}
+
+#mobile-button{
+  display: none;
+}
+
+#navbar-button:hover{
+  background-color: var(--button);
+  transition-duration: 0.5s;
+}
+
+#text-mobile{
+  display: none;
+}
+
+
+/* ================ CONTEÚDO PRINCIPAL ================= */
+.content-text{
+  white-space:nowrap;
+  display:block;
+  font-family: Manrope;
+  text-align: center;
+  font-size: 65px;
+  color: var(--text-color);
+}
+
+#border-purple{
+  color: black;
+  /* font-style: solid; */
+  text-shadow:  -1px -1px 2px #8257E5, 
+                -1px 1px 2px #8257E5,                    
+                1px -1px 2px #8257E5,                  
+                1px 0px 2px #8257E5;
+  }
+
+  .main-image{
+    display: flex;
+    width: 950px;
+    margin: 0 auto;
+
+  }
+
+  /* ==============Media Queries================ */
+
+  @media (max-width: 428px){
+    body{
+      background: #000;
+    }
+    
+    #circulo1{
+      display: none;
+    }
+    #circulo2{
+      display: none;
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .container{
+      width: 100%;
+      height: 58px;
+      border-bottom: 0.1px solid #29292E;
+      margin: 37px auto;
+    }
+
+    .logo-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .logo-mobile1{
+      display: flex;
+      width: 10rem;
+      margin: 0;
+    }
+
+    .logo-mobile2{
+      width: 1.5rem;
+    }
+
+    .logo-mobile::after{
+      
+    }
+
+    #text-mobile{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: var(--text-color-menu-mobile);
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 90px;
+    }
+
+    .content-text{
+      font-size: 70px;
+    }
+
+    #mobile-button{
+      white-space:nowrap;
+      display: flex;
+      justify-content: center;
+      padding: 0.6rem 0.2rem;
+      border: 1px solid var(--button);
+      border-radius: 5px;
+      margin: 90px 8rem;
+      font-family: Manrope;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+
+    #mobile-button a{
+      color: white;
+    }
+    
+    .content-text{
+      white-space:nowrap;
+      display:block;
+      font-family: Manrope;
+      text-align: center;
+      font-size: 30px;
+      color: var(--text-color);
+    }
+
+    .main-image{
+      display: flex;
+      width: 450px;
+      margin: 40px auto;
+  
+    }
+
+    #circulo3{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      bottom: 0;
+      background-color:#8257E5;
+      border-radius: 300px;
+      filter: blur(200px);
+      margin: 0 15%;
+    }
+
+  }
+
+  
